@@ -1,0 +1,633 @@
+@import url("./fonts/fonts.css");
+
+body{
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+h3{
+}
+
+#header{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgba(0,163,120,1) 0%,rgba(0,81,110,1) 100%);
+}
+
+#header-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 25px; 
+    height: 100%;
+}
+
+#header-title{
+    display:flex;
+    height:100%;
+    margin-right:50px;
+    color: #FFF;
+    font-weight: bold;
+    align-items: center;
+}
+
+#left-menu {
+    position: fixed;
+    top: 0; 
+    left: 10px;
+    width: 230px;
+    background-color: #f0f0f0; 
+    padding: 20px 10px;
+    border-radius: 10px; 
+    height: calc(100vh - 20px); 
+    z-index: 1; 
+    margin-top: 60px; 
+}
+
+#header {
+    z-index: 2; 
+}
+
+.left-menu-item {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    height: 40px;
+    padding: 0 15px;
+    color: #00a378;
+    font-family: "Arial";
+    font-style: bold;
+    font-weight: bold; 
+    font-size: 0.85rem;
+}
+
+#super-content{
+    position: absolute;
+    top: 70px;
+    left: 240px;
+    right:30px;
+    margin-left: 25px; 
+}
+
+#subtitle{
+    min-height:60px;
+    font-family: "Arial";
+    text-transform: none;
+    color: #000000;
+    padding-left: 1rem !important;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-size: 2.75rem;
+    line-height: 60px;
+    text-align: center;
+}
+
+#content{
+    background-color: #f6faf7;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 26px 10px rgba(0,163,120,0.1);
+    -moz-box-shadow: 0px 10px 26px 10px rgba(0,163,120,0.1);
+    box-shadow: 0px 10px 26px 10px rgba(0,163,120,0.1); 
+    min-height:100px;
+    padding:10px;
+}
+
+#content p, #content span{
+    font-family: "PosteramaText-Regular";
+}
+
+#change-lang{
+    position:absolute;
+    right:10px;
+}
+
+#logos{
+    display:flex;
+    width:100%;
+    text-align:center;
+    
+    justify-content:center;
+    align-items:center;
+    margin-top:5px;
+}
+
+.bottom-logo{
+    height:60px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#roadef-logo{
+    height:40px;
+    padding:5px;
+    background-color:#CCC;
+}
+
+.evenly-spaced-flex{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+#current-days, #previous-days{
+}
+
+#description{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+#description-text{
+    width:80%;
+}
+
+#description-logo-jfro{
+    float:right;
+    height:200px;
+}
+
+.day-box{
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    width:43%;
+    min-height:120px;
+}
+
+.day-box-title{
+    font-size:2rem;
+    font-family: "PosteramaText-Bold";
+    text-transform: uppercase;
+    color: #00a378;
+    font-weight: 700;
+}
+
+.day-box-date{
+    font-size:1.5rem;
+}
+
+#current-comity{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.current-comity-person{
+   text-align:center;
+   min-height:120px;
+}
+
+.current-comity-person-name{
+    font-size:1.5rem;
+    font-family: "PosteramaText-Bold";
+    text-transform: uppercase;
+    color: #00a378;
+    font-weight: 700;
+}
+
+.current-comity-person-affiliation{
+    font-size:1.1rem;
+}
+
+#coming-soon{
+    width:100%;
+    text-align:center;
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 60px;
+}
+
+#day-title{
+    width:100%;
+    height:30px;
+    text-align:left;
+    font-family: "Arial";
+    text-transform: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+
+.day-registration-button{
+    position:relative;
+    width:33%;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:50px;
+    height:75px;
+    text-align:center;
+    font-weight: 600;
+    font-size: 2rem;
+    color:black;
+    border:solid;
+}
+
+.day-registration-info{
+    position:absolute;
+    bottom:6px;
+    right:2px;
+    font-size:0.75rem;
+    font-weight:50;
+    line-height: 5px;
+}
+
+#day-date-place {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 50px; 
+}
+
+.day-date-place-container {
+    display: flex;
+    border: solid 2px #00895f;
+    border-radius: 10px;
+    padding: 10px; 
+    flex-basis: 45%; 
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    font-family: "Arial"; 
+    min-height: 150px; 
+}
+
+.day-date-place-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 50px; 
+    text-align: left; 
+    border-bottom: none; 
+}
+
+.day-date-place-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-top: 0; 
+    font-family: "Arial"; 
+}
+
+.day-date-place-value span {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: left;
+    font-family: "Arial"; 
+}
+
+#day-place-value-address {
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 30px;
+    white-space: pre-line; 
+}
+
+.place-url {
+    color: white;
+    background-color: #00a378;
+    padding: 5px 20px; 
+    border-radius: 30px; 
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px; 
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.place-url:hover {
+    background-color: #00895f; 
+}
+
+#day-date, #day-place {
+    width: 100%; 
+    text-align: left;
+    height: 100%; 
+    min-height: 150px; 
+}
+
+#day-logos{
+    display:flex;
+    height:100px;
+    width:50%;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+    justify-content:space-around;
+}
+
+.day-logo{
+    height:100%;
+}
+
+.day-external-organizer{
+    font-size:1rem;
+    color:blue;
+}
+
+#day-description{
+    width:75%;
+    margin:auto;
+    text-align:justify;
+}
+
+#day-program {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Arial";
+}
+
+#day-program-title {
+    width: 100%;
+    height: 60px;
+    text-align: left;
+    font-family: "Arial";
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 60px;
+    margin: 0;
+}
+
+#day-program-title h2 {
+    margin: 0; 
+    padding: 0;
+}
+
+#day-program-title h2 span {
+    font-family: "Arial"; 
+    font-weight: 600; 
+    font-size: 1.5rem; 
+    line-height: 60px; 
+}
+
+.day-program-slot {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    border: none;
+}
+
+.day-program-slot-time {
+    color: #00a378;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.day-program-slot-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.day-program-slot-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.day-program-slot-authors, .day-program-slot-language {
+    font-size: 1rem;
+    color: #00a378;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.day-program-slot-abstract {
+    font-size: 1rem;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.day-program-slot-files {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.day-program-slot-button {
+    background-color: #00a378;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: -15px;
+}
+
+.day-program-slot-button:hover {
+    background-color: #00895f;
+}
+
+.day-program-slot-time,
+.day-program-slot-language,
+.day-program-slot-authors {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.day-program-slot-time, 
+.day-program-slot-authors,
+.day-program-slot-language {
+    justify-content: space-between;
+}
+
+.speaker-author, .non-speaker-author {
+    font-weight: bold;
+}
+
+.speaker-author {
+    text-decoration: underline;
+}
+
+#registration-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.registration-label {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.registration-input {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin-right: 12px;
+}
+
+#registration-captcha-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#registration-captcha-image {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+#registration-message {
+    color: #00a378;
+}
+
+.registration-error-message {
+    color: red;
+}
+
+.contact-box {
+    width: 25%;
+    font-size: 1.1rem;
+    font-family: "PosteramaText-Bold";
+    text-transform: uppercase;
+    color: #00a378;
+    font-weight: 700;
+}
+
+.button {
+    background-color: #00a378;
+    color: white;
+    padding: 10px 50px;
+    border: solid 1px #00a378;
+    border-radius: 10px;
+    font-size: 1.1em;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00895f; 
+    color: white; 
+}
+
+.zoom-box {
+    display: flex;
+    background-color: #00a378;
+    border-radius: 10px;
+    padding: 10px; 
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease-in-out; 
+    text-align: center;
+    width: 10%; 
+    max-width: 600px; 
+}
+
+.zoom-box:hover {
+    background-color: #00895f; 
+}
+
+.zoom-box::after {
+    display: none; 
+}
+
+@media (max-width: 1024px) {
+    #left-menu {
+        width: 200px;
+    }
+
+    #super-content {
+        left: 220px;
+        right: 20px;
+    }
+
+    .day-program-slot {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .day-program-slot-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #left-menu {
+        width: 100%;
+        position: relative;
+        margin: 0;
+    }
+
+    #super-content {
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .day-program-slot {
+        padding: 15px;
+    }
+
+    .day-program-slot-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .day-program-slot-title {
+        font-size: 1rem;
+    }
+
+    .day-program-slot-button {
+        padding: 10px 20px;
+    }
+}
